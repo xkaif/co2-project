@@ -3,14 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
+import { toggleDirection } from '../utils/layoutUtils';
 
 const Header = ({ title, subtitle }) => {
   const [isRTL, setIsRTL] = useState(false);
 
-  const toggleDirection = () => {
-    const newDir = isRTL ? 'ltr' : 'rtl';
-    document.documentElement.setAttribute('dir', newDir);
-    setIsRTL(newDir === 'rtl');
+  const handleDirectionToggle = () => {
+    toggleDirection(isRTL, setIsRTL);
   };
 
   return (
@@ -32,7 +31,7 @@ const Header = ({ title, subtitle }) => {
                 <Link className="nav-link" to="/ueberuns">Über uns</Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link" onClick={toggleDirection}>{isRTL ? 'RTL' : 'LTR'}</button>
+                <button className="nav-link" onClick={handleDirectionToggle}>{isRTL ? 'RTL' : 'LTR'}</button>
               </li>
             </ul>
           </div>

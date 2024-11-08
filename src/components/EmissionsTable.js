@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import emissionsData from '../data/emissionsData';
+import { sanitizeInput } from '../utils/stringUtils';
 
 const EmissionsTable = () => {
   const [filterText, setFilterText] = useState(''); // Filterzustand für Land und Unternehmen
   const [sortColumn, setSortColumn] = useState(null);
   const [sortDirection, setSortDirection] = useState('asc');
-
-  // Sanitize-Funktion hinzufügen
-  const sanitizeInput = (input) => {
-    return input.replace(/[<>'"&]/g, '');
-  };
 
   // Aktualisierte onChange-Handler
   const handleFilterChange = (e) => {
