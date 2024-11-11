@@ -53,6 +53,7 @@ const Home = () => {
                       title="Umweltschutz"
                       icon="tree-fill"
                       content="Durch innovative Projekte und gezielte Initiativen engagieren wir uns aktiv für den Erhalt unserer Ökosysteme und die Bewahrung der biologischen Vielfalt."
+                      titleColor="white"
                     />
                   </div>
                   
@@ -62,6 +63,7 @@ const Home = () => {
                       title="Nachhaltigkeit"
                       icon="recycle"
                       content="Wir entwickeln zukunftsweisende Lösungen für einen ressourcenschonenden Lebensstil und inspirieren zu nachhaltigem Handeln im Alltag."
+                      titleColor="white"
                     />
                   </div>
                   
@@ -71,6 +73,7 @@ const Home = () => {
                       icon="book-fill"
                       backgroundColor="linear-gradient(135deg, #3498db, #2980b9)"
                       content="Mit interaktiven Workshops und innovativen Bildungsprogrammen vermitteln wir praktisches Wissen für eine nachhaltige Lebensweise. Unsere erfahrenen Experten bieten maßgeschneiderte Schulungen für verschiedene Altersgruppen und Wissensniveaus an. Von Grundschulkindern bis hin zu Unternehmensteams – wir gestalten Bildung lebendig und praxisorientiert. Dabei setzen wir auf moderne Lehrmethoden und digitale Tools, um Umweltbildung zeitgemäß und effektiv zu vermitteln."
+                      titleColor="white"
                     />
                   </div>
                 </div>

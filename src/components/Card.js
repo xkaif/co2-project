@@ -21,7 +21,7 @@ const Card = ({
         <div className="d-flex align-items-center mb-4">
           {icon && <i className={`bi bi-${icon} fs-3 me-2`}></i>}
           <h3 className="h4 mb-0">
-            <span style={{color: '#00bc8c'}}>{title}</span>
+            <span style={{color: textColor}}>{title}</span>
           </h3>
         </div>
         {content}
